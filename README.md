@@ -2,17 +2,17 @@
 
 This is a Dashkit [Rails](https://rubyonrails.org/) boilerplate project.
 
-The goal of this project is to demonstrate the right way to include Dashkit's HTML, SCSS and JS files within a Rails application
+The goal of this project is to demonstrate the right way to include Dashkit's HTML, SCSS and JS files within a Rails application.
 
 Notes:
-- This build includes Dashkit v2 which is based on Bootstrap 5
+- This build includes Dashkit v2 which is based on Bootstrap 5.
 
 ### Getting Started
 
 - bundle install
 - yarn
 - bin/rails server (or ruby bin/rails server on Windows)
-- Open [http://localhost:3000](http://localhost:3000)
+- Open [http://localhost:3000](http://localhost:3000).
 
 ### Documentation
 
