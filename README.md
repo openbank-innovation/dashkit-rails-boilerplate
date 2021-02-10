@@ -12,7 +12,7 @@ Notes:
 - bundle install
 - yarn
 - bin/rails server (or ruby bin/rails server on Windows)
-- Open [http://localhost:3000](http://localhost:3000).
+- Open [http://localhost:3000](http://localhost:3000)
 
 ### Documentation
 
