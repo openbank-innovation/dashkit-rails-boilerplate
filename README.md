@@ -1,24 +1,24 @@
-# README
+# Dashkit Rails Boilerplate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Dashkit [Rails](https://rubyonrails.org/) boilerplate project.
 
-Things you may want to cover:
+The goal of this project is to demonstrate the right way to include Dashkit's HTML, SCSS and JS files within a Rails application
 
-* Ruby version
+Notes:
+- This build includes Dashkit v2 which is based on Bootstrap 5
 
-* System dependencies
+### Getting Started
 
-* Configuration
+- bundle install
+- yarn
+- bin/rails server (or ruby bin/rails server on Windows)
+- Open [http://localhost:3000](http://localhost:3000)
 
-* Database creation
+### Documentation
 
-* Database initialization
+- Rails documentation is available at [`https://rubyonrails.org/`](https://rubyonrails.org/).
+- Dashkit documentation is available at [`https://dashkit.goodthemes.co/v/2.0.0-beta2/docs/getting-started.html`](https://dashkit.goodthemes.co/v/2.0.0-beta2/docs/getting-started.html).
 
-* How to run the test suite
+### Support
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Good Themes is happy to provide support for issues. Shoot us an email at support@goodthemes.co and we'll get you squared away.
