@@ -3,9 +3,9 @@ import 'bootstrap';
 
 // Theme
 import './autosize';
+import './bootstrap';
 import './checklist';
 import './choices';
-import './dropdown';
 import './dropzone';
 import './flatpickr';
 import './highlight';
@@ -14,10 +14,10 @@ import './kanban';
 import './list';
 import './map';
 import './navbar-collapse';
+import './navbar-dropdown';
 import './popover';
 import './tooltip';
 import './quill';
 import './wizard';
-
 // User
 import './user';

@@ -231,6 +231,15 @@ $h4-font-size: 0.9375rem !default;
 $h5-font-size: 0.8125rem !default;
 $h6-font-size: 0.625rem !default;
 
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+) !default;
+
 $headings-margin-bottom: $spacer * .75 !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.1 !default;
@@ -389,7 +398,7 @@ $form-switch-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3
 $input-group-addon-color: $text-muted !default;
 $input-group-addon-bg: $input-bg !default;
 
-$form-select-indicator-padding: 1.25rem !default;
+$form-select-indicator-padding: 1.75rem !default;
 $form-select-bg-size: .75em .75em !default;
 $form-select-indicator-color: $gray-600 !default;
 $form-select-indicator: url("data:image/svg+xml,<svg viewBox='0 0 9 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L4.25 4.25L7.5 1' stroke='#{$form-select-indicator-color}' stroke-width='1.08333' stroke-linecap='round' stroke-linejoin='round'/></svg>") !default;
@@ -600,6 +609,13 @@ $breadcrumb-divider: "" !default;
 $btn-close-width: .5em !default;
 $btn-close-padding-x: .5em !default;
 
+
+// Offcanvas
+
+$offcanvas-horizontal-width: 350px !default;
+$offcanvas-padding-x: $modal-inner-padding !default;
+
+
 // Code
 
 $code-font-size: 87.5% !default;
@@ -708,8 +724,6 @@ $navbar-light-heading-color: $text-muted !default;
 $navbar-light-divider-color: $border-color !default;
 $navbar-light-brand-filter: none;
 
-$navbar-dropdown-toggle-on-hover: true !default;
-
 
 // Dropdowns
 
@@ -784,8 +798,6 @@ $border-radius-pill-padding-x: .6em !default;
 
 // Modal
 
-$modal-dialog-vertical-width: 350px !default;
-
 $modal-card-body-max-height: 350px !default;
 
 
@@ -809,6 +821,11 @@ $breadcrumb-font-size-sm: $font-size-sm !default;
 // Progress bars
 
 $progress-height-sm: 0.25rem !default;
+
+
+// Offcanvas
+$offcanvas-header-padding-y: 1rem !default;
+$offcanvas-header-padding-x: $offcanvas-padding-x !default;
 
 
 // Auth
@@ -856,12 +873,12 @@ $chart-colors: (
   "gray-900": $gray-900,
   "primary-100": "#D2DDEC",
   "primary-300": "#A6C5F7",
+  "primary-700": $primary,
   "default-color": $gray-600,
   "default-font-color": $gray-600,
   "arc-border-color": $white,
   "arc-hover-border-color": $white,
   "grid-line-color": $gray-300,
-  "grid-line-zero-line-color": $gray-300
 ) !default;
 /* beautify ignore:end */
 
@@ -986,10 +1003,14 @@ $utilities: (
   ),
   "font-size": (
     property: font-size,
-    values: (
-      "base": $font-size-base,
-      "lg": $font-size-lg,
-      "sm": $font-size-sm,
+    class: fs,
+    values: map-merge(
+      $font-sizes,
+      (
+        "base": $font-size-base,
+        "lg": $font-size-lg,
+        "sm": $font-size-sm,
+      )
     )
   ),
   "text-gray": (
